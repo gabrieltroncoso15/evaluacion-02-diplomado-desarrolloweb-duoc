@@ -1,0 +1,428 @@
+/*
+COLORES
+
+Principal
+#03233b
+
+Textos
+#0f5fa6
+#d40a53
+#03233b
+#7a0060
+
+Botones
+#48A605
+
+Footer
+#0c2659
+*/
+
+/*GENERAL*/
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0 auto;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    padding: 0 120px;
+}
+
+section {
+    min-height: 700px;
+    padding: 40px 120px;
+}
+
+section h1 {
+    font-size: 3rem;
+}
+
+.button {
+    background-color: #48A605;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+
+    font-size: 1.2em;
+
+    text-decoration: none;
+}
+
+.button i {
+    margin-right: 5px;
+}
+
+/*HEADER*/
+header {
+    background-color: #03233b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 60px;
+
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+header nav div {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+header nav div a {
+    margin-left: 0;
+}
+
+/*HOME*/
+#home {
+    padding: 0;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+/*BLUE AUSTRAL*/
+#ba {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#ba article {
+    width: 50%;
+    text-align: right;
+}
+
+#ba article h2:nth-child(1) {
+    color: #0f5fa6;
+}
+
+#ba article p:nth-child(2) {
+    color: #03233b;
+}
+
+#ba article h2:nth-child(3) {
+    color: #d40a53;
+}
+
+#ba article p:nth-child(4) {
+    color: #7a0060;
+}
+
+/*CLIENTES*/
+#clientes {
+    background-image: url('../images/fondos/fondo_clientes.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#clientes article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#clientes article div {
+    background-color: rgba(54, 154, 217, 0.1);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-radius: 20px;
+
+    width: 33.33%;
+    margin-right: 20px;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-align: center;
+    color: #03233b;
+}
+
+#clientes article div img {
+    width: 250px;
+    height: 250px;
+
+    object-fit: cover;
+    object-position: left;
+    border-radius: 100%;
+}
+
+#clientes article div h3 {
+    margin: 0;
+}
+
+
+
+/*PARTNERS*/
+#partners{
+    text-align: center;
+    height: auto;
+    min-height: 500px;
+    
+   
+}
+#partners article img{
+    width: 200px;
+    height: 200px;
+    margin: 0 15px;
+}
+
+/*RECETAS*/
+#recetas {
+    background-image: url('../images/fondos/fondo_recetas.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#recetas h1 {
+    color: white;
+}
+
+#recetas h3 {
+    color: #03233b;
+}
+
+#recetas p:nth-child(2) {
+    color: #7a0060;
+}
+
+#recetas p:nth-child(3) {
+    color: #d40a53;
+}
+
+#recetas p:nth-child(4) {
+    color: #03233b;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#recetas article {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#recetas article div {
+    border-radius: 5px;
+}
+
+#recetas .filaUno div {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#recetas .filaUno div div {
+    width: 80%;
+    background-color: white;
+    padding: 10px 100px 10px 20px;
+}
+
+#recetas .filaUno div img {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+#recetas .filaDos div {
+    background-color: white;
+    width: 25%;
+    margin-right: 2%;
+}
+
+#recetas .filaDos div img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 200px;
+
+    object-fit: cover;
+    object-position: top;
+
+}
+
+#recetas .filaDos div div {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+#masRecetas {
+    padding: 20px;
+    text-align: center;
+}
+
+/*CONTACTO*/
+
+#contacto {
+    background-image: url('../images/fondos/fondo_contacto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contacto form {
+    background-color: rgba(132, 132, 143, 0.3);
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+
+    display: flex;
+    align-items: baseline;
+}
+
+#contacto form input::placeholder,
+#contacto form textarea::placeholder {
+    color: white;
+}
+
+#contacto form #formLeft {
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+}
+
+#contacto form #formLeft h2 {
+    margin: 0;
+    color: white;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#contacto form #formLeft hr {
+    width: 40%;
+    border: 0;
+    border-top: 2px solid #48A605;
+    margin-right: 60%;
+
+    margin-bottom: 40px;
+}
+
+#contacto form label {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#contacto form #formLeft input {
+    font-size: 1em;
+    color: white;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+
+    margin-bottom: 20px;
+}
+
+#contacto form #formLeft span {
+    color: white;
+}
+
+#contacto form #formRight {
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    height: 300px;
+
+    position: relative;
+
+    border-left: 2px solid #48A605;
+
+    padding-left: 20px;
+}
+
+#contacto form #formRight textarea {
+    border: 0;
+    height: 70%;
+    background-color: transparent;
+    margin-top: 5px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    font-size: 1em;
+    color: white;
+}
+
+#contacto form #formRight input[type="submit"] {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    background-color: #48A605;
+
+    border: none;
+
+    bottom: 0;
+    left: 0;
+
+    font-size: 1em;
+    color: white;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #0c2659;
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px 120px;
+    color: white;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer article {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+footer article div nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer article img {
+    height: 300px;
+}
+
+#cr {
+    align-self: center;
+}
