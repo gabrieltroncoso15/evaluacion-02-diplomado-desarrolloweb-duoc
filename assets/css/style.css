@@ -282,7 +282,35 @@ header nav div a {
     padding: 20px;
     text-align: center;
 }
+/*RECETAS*/
+ .galeriaReceta{
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0;
+ }
 
+ .galeriaReceta div{
+     background-color: #d40a53;
+     width: 400px;     
+     text-align: center;
+
+}
+ .galeriaReceta div img{
+     width: 350px;
+     height: 300px;
+     margin: 15px;
+     object-fit: cover;
+ }
+
+ .galeriaReceta div h3 {
+    color: aliceblue;
+    font-size: 30px;
+   
+}
+.galeriaReceta div p {
+    color: aliceblue;
+    margin: 0 20px 20px;
+}
 /*CONTACTO*/
 
 #contacto {
