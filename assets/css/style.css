@@ -177,8 +177,6 @@ header nav div a {
     margin: 0;
 }
 
-
-
 /*PARTNERS*/
 #partners{
     text-align: center;
@@ -228,10 +226,11 @@ header nav div a {
     font-style: italic;
 }
 
-#recetas article {
+#recetas article {    
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
 }
 
 #recetas article div {
@@ -242,6 +241,7 @@ header nav div a {
     margin-right: 20px;
     margin-bottom: 20px;
     position: relative;
+    min-width: 700px;
 }
 
 #recetas .filaUno div div {
@@ -251,9 +251,14 @@ header nav div a {
 }
 
 #recetas .filaUno div img {
-    position: absolute;
-    right: 0;
-    top: 15px;
+    position: absolute;    
+    border-radius: 150px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; 
+    right: -30px; 
+    top: -12px;
+    z-index: 20;
 }
 
 #recetas .filaDos div {
@@ -282,35 +287,7 @@ header nav div a {
     padding: 20px;
     text-align: center;
 }
-/*RECETAS*/
- .galeriaReceta{
-     display: flex;
-     flex-wrap: wrap;
-     padding: 0;
- }
 
- .galeriaReceta div{
-     background-color: #d40a53;
-     width: 400px;     
-     text-align: center;
-
-}
- .galeriaReceta div img{
-     width: 350px;
-     height: 300px;
-     margin: 15px;
-     object-fit: cover;
- }
-
- .galeriaReceta div h3 {
-    color: aliceblue;
-    font-size: 30px;
-   
-}
-.galeriaReceta div p {
-    color: aliceblue;
-    margin: 0 20px 20px;
-}
 /*CONTACTO*/
 
 #contacto {
@@ -420,6 +397,111 @@ header nav div a {
     font-size: 1em;
     color: white;
 }
+
+/*TIENDA*/
+
+.grillaTienda{
+    display: flex;
+    justify-content: space-around;
+}
+
+.grillaTienda img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+.grillaTienda figure {
+    position: relative;
+    
+} 
+.grillaTienda a{
+    color: white;
+}
+
+.grillaTienda figure figcaption{
+    background-color: #03233bd0;
+    padding: 20px;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    height: 100%;
+    transition: 0.2s;
+    
+}
+
+.grillaTienda figure figcaption:hover{
+    opacity: 1;
+}
+
+/*RECETAS*/
+
+#bannerRecetas{
+    padding: 0;
+    min-height: auto;
+}
+#bannerRecetas img{
+    width: 100%;
+}
+.galeriaReceta{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px ;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+
+.galeriaReceta div{
+    max-width: 400px;     
+    text-align: center;
+}
+
+.resaltaReceta:hover{
+    background-color: #e6e6e6;  
+
+}
+.galeriaReceta div img{
+    width: 350px;
+    height: 300px;
+    margin: 15px;
+    object-fit: cover;
+}
+
+.galeriaReceta div h3 {
+   font-size: 25px;
+   color: #0f5fa6;
+  
+}
+.galeriaReceta div p {
+   margin: 0 20px 20px;
+}
+
+/*DIV MOSTRAR PAGINAS*/
+.masPaginas{
+    min-width: 100% !important;
+    align-self: flex-end;
+    
+}
+.masPaginas ul{ 
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+}
+.masPaginas ul li{
+    background-color: #48A605;
+    font-size: 20px;
+    list-style: none;
+    padding: 20px;
+    border: solid 1px #cccccc;
+    margin-right: 10px;
+}
+.masPaginas a{
+    text-decoration: none;
+    color: white;
+}
+
+.masPaginas ul li:hover{
+    background-color: #03233b;
+} 
 
 /*FOOTER*/
 footer {
