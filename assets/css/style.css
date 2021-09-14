@@ -435,6 +435,7 @@ header nav div a {
 
 /*RECETAS*/
 
+
 #bannerRecetas{
     padding: 0;
     min-height: auto;
@@ -473,6 +474,41 @@ header nav div a {
 }
 .galeriaReceta div p {
    margin: 0 20px 20px;
+}
+
+#recetaContenido{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+
+#textoReceta {
+    width: 60%;
+}
+
+#fotoreceta{
+    width: 40%;    
+}
+
+#fotoreceta img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+#textoReceta h1, #textoReceta h2{
+    color: #03233b ;
+}
+
+#textoReceta h3 a{
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#textoReceta h3 a:hover{
+    background-color: #03233b;
 }
 
 /*DIV MOSTRAR PAGINAS*/
